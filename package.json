@@ -1,13 +1,15 @@
 {
   "name": "react-boilerplate",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Boilerplate simples para ReactJS.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --progress --colors --inline --hot --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
+  "keywords": [
+    "boilerplate", "react", "webpack", "scss"
+  ],
   "author": "",
   "license": "The Unlicense",
   "devDependencies": {
