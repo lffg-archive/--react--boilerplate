@@ -12,13 +12,36 @@ module.exports = {
     extensions: [ '.js', '.jsx' ]
   },
   module: {
-    loaders: [{
-      test: /.js[x]?$/,
-      loader: 'babel-loader',
+    rules: [{
+      test: /\.js[x]?$/,
       exclude: /node_modules/,
-      query: {
-        presets: [ 'env', 'react' ],
-      }
+      use: [{
+        loader: 'babel-loader',
+        query: {
+          presets: [ 'env', 'react' ]
+        }
+      }]
+    }, {
+      test: /\.scss$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader'
+      }, {
+        loader: 'sass-loader',
+        options: {
+          outputStyle: 'compressed'
+        }
+      }, {
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [
+              require('autoprefixer')
+            ];
+          }
+        }
+      }]
     }]
   }
 };

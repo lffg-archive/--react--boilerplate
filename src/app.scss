@@ -1,0 +1,20 @@
+$font: "Segoe UI", "Helvetica Neue", "Helvetica", "Ubuntu", "Arial", sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 17px;
+  font-family: $font;
+  background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
+}
