@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Boilerplate simples para ReactJS.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,10 @@
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
-    "boilerplate", "react", "webpack", "scss"
+    "boilerplate",
+    "react",
+    "webpack",
+    "scss"
   ],
   "author": "",
   "license": "The Unlicense",
@@ -19,6 +22,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
+    "file-loader": "^1.1.11",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.1.0",
     "react": "^16.2.0",
