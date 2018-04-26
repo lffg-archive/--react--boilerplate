@@ -22,7 +22,7 @@ module.exports = {
         }
       }]
     }, {
-      test: /\.scss$/,
+      test: /\.(?:scss|sass)$/,
       use: [{
         loader: 'style-loader'
       }, {
@@ -41,6 +41,11 @@ module.exports = {
             ];
           }
         }
+      }]
+    }, {
+      test: /\.(?:woff|woff2|ttf|eot|svg|png|jpg|jpeg|gif)$/,
+      use: [{
+        loader: 'file'
       }]
     }]
   }
